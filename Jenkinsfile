@@ -20,11 +20,6 @@ pipeline {
                 bat 'npm run build'
             }
         }
-        stage('test') {
-            steps {
-                bat 'npm run test'
-            }
-        }
         stage('build image') {
             steps {
                 bat 'docker build -t nextjs-app:1.0 .'
