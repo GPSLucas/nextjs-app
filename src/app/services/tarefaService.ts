@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "http://localhost:3001";
 
 export async function getTarefas() {
   const res = await fetch(`${API_URL}/tarefas`, { cache: 'no-store' });
